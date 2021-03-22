@@ -6,7 +6,7 @@ The goal of this project is to visulaize and analyze weather data versus locatio
 
 ### Part I - WeatherPy
 
-Creaed a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. Utilized a [Python library](https://pypi.python.org/pypi/citipy), and the [OpenWeatherMap API](https://openweathermap.org/api) to create a representative model of weather across world cities.
+Created a Python script to visualize the weather of 500+ random cities across the world of varying distance from the equator. Utilized a [Python city library](https://pypi.python.org/pypi/citipy), and the [OpenWeatherMap API](https://openweathermap.org/api) to create a representative model of weather across world cities.
 
 Ran linear regression on each relationship and then separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
