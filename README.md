@@ -75,3 +75,48 @@ Uses jupyter-gmaps and the Google Places API.
 * Plots the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
 ![screenshot](/VacationPy/Images/Heat%20Map%20with%20Markers.png)
+
+## Libraries Required
+
+- Matplotlib
+- Pandas
+- Scipy
+- Requests
+- os
+- numpy
+- time
+- datetime
+- gmaps
+
+- You will need to acquire an [OpenWeatherMap API](https://openweathermap.org/api) and a [Google API](https://support.google.com/googleapi/answer/6158862?hl=en). 
+
+## File Description
+
+### WeatherPy
+
+- Contains the first part of the project
+
+#### WeatherPy.ipynb
+
+- Contains the code in a jupyter notebook file that analyzes the weather vs locations for 500+ cities.
+
+#### output_data
+
+- This folder contains a csv file (cities.csv) that is outputted by the WeatherPy.ipynb jupyter notebook file. This file contains the cities with their latitude and longitude, temperature, humidity, cloudiness, wind speed, country, and date.
+
+#### Images
+
+- This folder contains all the screen shots that are created from the jupyter notebook file.
+
+### VacationPy
+
+- Contains the second part of the project
+
+#### VacationPy.ipynb
+
+- Contains the code in a jupyter notebook file that plots hotels near cities using gmaps.
+
+#### Images
+
+- This folder contains the screen shot of the map created from the jupyter notebook file.
+
