@@ -1,32 +1,46 @@
 # python-api-challenge
 
-## Background
+## Project Description
 
-Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. This project uses Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
+The goal of this project is to visulaize and analyze weather data versus location in the world to determine if the location correlates with temperature, humidity, cloudiness, or wind speed. The second part of the project places the humidity data on a heatmap and plots hotels near ~500 cities uing the google API and gmaps. This project uses `Python`, Jupyter notebook, and the following libraries: `pandas`, `requests`, `Matplotlib`, `os`, `numpy`, and `gmaps`. You will need to acquire an [OpenWeatherMap API](https://openweathermap.org/api) and a [Google API](https://support.google.com/googleapi/answer/6158862?hl=en). 
 
 ## Part I - WeatherPy
 
 Creaed a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. Utilized a [Python library](https://pypi.python.org/pypi/citipy), and the [OpenWeatherMap API](https://openweathermap.org/api) to create a representative model of weather across world cities.
 
-Created a series of scatter plots to showcase the following relationships:
-
-* Temperature (F) vs. Latitude
-* Humidity (%) vs. Latitude
-* Cloudiness (%) vs. Latitude
-* Wind Speed (mph) vs. Latitude
-
-
-Ran linear regression on each relationship. 
-Then separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+Ran linear regression on each relationship and then separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Northern%20Hemisphere%20Max%20Temps%20vs.%20Latitude.png)
+
 * Southern Hemisphere - Temperature (F) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Southern%20Hemisphere%20Max%20Temps%20vs.%20Latitude.png)
+
 * Northern Hemisphere - Humidity (%) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Northern%20Hemisphere%20Humidity%20vs.%20Latitude.png)
+
 * Southern Hemisphere - Humidity (%) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Southern%20Hemisphere%20Humidity%20vs.%20Latitude.png)
+
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Northern%20Hemisphere%20Cloudiness%20vs.%20Latitude.png)
+
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Southern%20Hemisphere%20Cloudiness%20vs.%20Latitude.png)
+
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Northern%20Hemisphere%20Wind%20Speed%20vs.%20Latitude.png)
+
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+
+![screenshot](/WeatherPy/Images/LinReg%20Southern%20Hemisphere%20Wind%20Speed%20vs.%20Latitude.png)
 
 The notebook:
 
@@ -53,11 +67,3 @@ Uses jupyter-gmaps and the Google Places API for this part.
 
 * Plots the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
-Uses:
-
-* Jupyter notebook.
-* Matplotlib or Pandas plotting libraries.
-
-### Copyright
-
-Trilogy Education Services © 2020. All Rights Reserved.
